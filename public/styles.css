@@ -1,0 +1,71 @@
+.search-container {
+  @apply flex gap-4 w-full max-w-3xl mx-auto bg-white p-6 rounded-xl shadow-lg;
+}
+
+.search-input {
+  @apply flex-1 px-6 py-4 text-lg rounded-xl border-2 border-gray-200 
+         focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 
+         outline-none transition-all;
+}
+
+.search-btn {
+  @apply px-8 py-4 bg-indigo-600 text-white text-lg font-semibold rounded-xl
+         hover:bg-indigo-700 transform hover:scale-105 transition-all duration-200
+         shadow-md hover:shadow-lg;
+}
+
+.nav-btn {
+  @apply px-6 py-3 rounded-xl text-lg font-medium transition-all duration-200
+         hover:bg-indigo-50 hover:text-indigo-600 transform hover:scale-105;
+}
+
+.nav-btn.active {
+  @apply bg-indigo-600 text-white shadow-md;
+}
+
+.result-card {
+  @apply bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200;
+}
+
+.result-card h3 {
+  @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.keyword-list {
+  @apply space-y-3;
+}
+
+.keyword-item {
+  @apply flex items-center justify-between p-4 bg-gray-50 rounded-xl
+         hover:bg-indigo-50 transition-colors duration-200;
+}
+
+.keyword-text {
+  @apply text-lg font-medium text-gray-700;
+}
+
+.keyword-score {
+  @apply px-4 py-2 bg-indigo-100 text-indigo-700 rounded-xl text-sm font-bold;
+}
+
+.bulk-textarea {
+  @apply w-full h-48 px-6 py-4 text-lg rounded-xl border-2 border-gray-200 
+         focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 
+         outline-none transition-all resize-none;
+}
+
+.loading {
+  @apply flex items-center justify-center p-8 text-xl text-gray-500;
+}
+
+.error {
+  @apply bg-red-50 text-red-600 p-6 rounded-xl text-center text-lg font-medium;
+}
+
+.difficulty-meter {
+  @apply h-6 bg-gray-100 rounded-xl overflow-hidden shadow-inner;
+}
+
+.difficulty-value {
+  @apply h-full text-sm flex items-center justify-center text-white font-bold
+         transition-all duration-500;</content>

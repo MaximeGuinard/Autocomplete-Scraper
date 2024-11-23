@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Tools Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-indigo-600 mb-6">🔍 SEO Tools Pro</h1>
+            <div class="bg-white rounded-xl shadow-lg p-3 inline-flex gap-3">
+                <button class="nav-btn active" data-tab="explorer">
+                    🎯 Explorer
+                </button>
+                <button class="nav-btn" data-tab="questions">
+                    ❓ Questions
+                </button>
+                <button class="nav-btn" data-tab="bulk">
+                    📊 Analyse en masse
+                </button>
+            </div>
+        </header>
+
+        <main class="max-w-6xl mx-auto">
+            <section id="explorer" class="tab-content active">
+                <div class="search-container">
+                    <input type="text" id="keywordInput" placeholder="Entrez un mot-clé..." class="search-input">
+                    <button id="analyzeBtn" class="search-btn">Analyser</button>
+                </div>
+                <div id="explorerResults" class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8"></div>
+            </section>
+
+            <section id="questions" class="tab-content hidden">
+                <div class="search-container">
+                    <input type="text" id="questionInput" placeholder="Rechercher des questions..." class="search-input">
+                    <button id="questionBtn" class="search-btn">Rechercher</button>
+                </div>
+                <div id="questionResults" class="mt-8"></div>
+            </section>
+
+            <section id="bulk" class="tab-content hidden">
+                <div class="search-container flex-col">
+                    <textarea id="bulkKeywords" placeholder="Entrez vos mots-clés (un par ligne)" class="bulk-textarea"></textarea>
+                    <button id="bulkAnalyzeBtn" class="search-btn w-full mt-4">Analyser en masse</button>
+                </div>
+                <div id="bulkResults" class="mt-8"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
